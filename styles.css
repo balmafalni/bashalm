@@ -1,3 +1,12 @@
+html, body{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;     /* important */
+}
+
+body{
+  position: relative;
+}
 :root{
   --bg:#ffffff;
   --text:#0b0f18;
