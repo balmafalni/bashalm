@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>BEIN Studio — Bashar Al Mafalni</title>
+  <meta name="description" content="Premium websites, photography, and social media ads. BEIN Studio by Bashar Al Mafalni." />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: keep system fonts (premium enough). If you want Google Fonts, tell me which. -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HERO BACKGROUND LAYER -->
+  <div class="heroFx" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="gridGlow"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container navInner">
+      <a class="logo" href="#top" aria-label="BEIN Studio">
+        <span class="logoMark">BEIN</span>
+        <span class="logoSub">Studio</span>
+      </a>
+
+      <nav class="navLinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#widgets">Widgets</a>
+        <a href="#about">About</a>
+        <a class="cta" href="#contact">Email</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawerCard">
+      <a href="#work" class="drawerLink">Work</a>
+      <a href="#services" class="drawerLink">Services</a>
+      <a href="#widgets" class="drawerLink">Widgets</a>
+      <a href="#about" class="drawerLink">About</a>
+      <a href="#contact" class="drawerLink strong">Email Me</a>
+      <a href="https://www.instagram.com/bashar.mafalani/" target="_blank" rel="noreferrer" class="drawerLink">Instagram</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container heroGrid">
+        <div class="heroLeft reveal">
+          <div class="badgeRow">
+            <span class="badge">Web Design</span>
+            <span class="badge">Photography</span>
+            <span class="badge">Meta Ads</span>
+          </div>
+
+          <h1 class="headline">
+            Premium digital presence
+            <span class="headlineAccent">that looks expensive.</span>
+          </h1>
+
+          <p class="subhead">
+            I’m <strong>Bashar Al Mafalni</strong>. I build modern websites, shoot cinematic content,
+            and run Meta ads — so local businesses get attention and customers.
+          </p>
+
+          <div class="heroActions">
+            <a class="btn primary" href="#contact">Email Me</a>
+            <a class="btn ghost" href="#work">See Work</a>
+          </div>
+
+          <div class="miniStats">
+            <div class="statCard">
+              <span class="k">Experience</span>
+              <span class="v">5+ years</span>
+            </div>
+            <div class="statCard">
+              <span class="k">Languages</span>
+              <span class="v">English / Arabic</span>
+            </div>
+            <div class="statCard">
+              <span class="k">Phone</span>
+              <span class="v"><a href="tel:+12262606527">226-260-6527</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO WIDGET PANEL -->
+        <aside class="heroRight reveal">
+          <div class="panel">
+            <div class="panelTop">
+              <div class="panelTitle">
+                <span class="dot"></span>
+                <span>Live Studio Dashboard</span>
+              </div>
+              <span class="chip">BEIN Studio</span>
+            </div>
+
+            <div class="widgetGrid">
+              <!-- Web widget -->
+              <div class="widget wWeb">
+                <div class="wHead">
+                  <span class="wIcon">⌘</span>
+                  <span class="wName">Website Build</span>
+                </div>
+                <div class="wBody">
+                  <div class="progress">
+                    <div class="bar" style="--p:82%"></div>
+                  </div>
+                  <div class="wMeta">
+                    <span>Speed</span><strong>Fast</strong>
+                    <span>UI</span><strong>Premium</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photo widget -->
+              <div class="widget wPhoto">
+                <div class="wHead">
+                  <span class="wIcon">◉</span>
+                  <span class="wName">Photography</span>
+                </div>
+                <div class="wBody">
+                  <div class="shutter">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="wMeta">
+                    <span>Style</span><strong>Cinematic</strong>
+                    <span>Edits</span><strong>Clean</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social widget -->
+              <div class="widget wSocial">
+                <div class="wHead">
+                  <span class="wIcon">↗</span>
+                  <span class="wName">Meta Ads</span>
+                </div>
+                <div class="wBody">
+                  <div class="sparkLine">
+                    <span class="p1"></span>
+                    <span class="p2"></span>
+                    <span class="p3"></span>
+                    <span class="p4"></span>
+                    <span class="p5"></span>
+                  </div>
+                  <div class="wMeta">
+                    <span>Target</span><strong>Leads</strong>
+                    <span>Creative</span><strong>High CTR</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact quick -->
+              <div class="widget wContact">
+                <div class="wHead">
+                  <span class="wIcon">@</span>
+                  <span class="wName">Contact</span>
+                </div>
+                <div class="wBody">
+                  <a class="quick" href="mailto:balmafalni@gmail.com">balmafalni@gmail.com</a>
+                  <div class="wMeta">
+                    <span>Response</span><strong>Fast</strong>
+                    <span>City</span><strong>—</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="panelNote">
+              Clean websites + strong visuals + ads that perform. One system.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WORK SLIDER -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Work</h2>
+          <p>Real projects and platforms. Built clean, built to sell.</p>
+        </div>
+
+        <div class="slider reveal" data-slider="work">
+          <div class="sliderTop">
+            <div class="sliderControls">
+              <button class="iconBtn" data-prev aria-label="Previous">←</button>
+              <button class="iconBtn" data-next aria-label="Next">→</button>
+            </div>
+            <div class="sliderHint">Drag / scroll</div>
+          </div>
+
+          <div class="track" data-track>
+            <!-- Slide 1 -->
+            <article class="slide">
+              <div class="cardPreview gradA">
+                <div class="previewTop">
+                  <span class="pillTag">Website</span>
+                  <span class="pillTag soft">Featured</span>
+                </div>
+                <h3>FCJerseys.ca</h3>
+                <p>Storefront built for product clarity, speed, and conversion.</p>
+                <div class="previewActions">
+                  <a class="btn small" href="https://fcjerseys.ca" target="_blank" rel="noreferrer">Open Site ↗</a>
+                  <button class="btn small ghost" data-open="case-fc">Case</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="slide">
+              <div class="cardPreview gradB">
+                <div class="previewTop">
+                  <span class="pillTag">Photography</span>
+                </div>
+                <h3>Portfolio</h3>
+                <p>Cinematic visuals, clean edits, modern presentation.</p>
+                <div class="previewActions">
+                  <a class="btn small" href="https://www.instagram.com/bashar.mafalani/" target="_blank" rel="noreferrer">Instagram ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="slide">
+              <div class="cardPreview gradC">
+                <div class="previewTop">
+                  <span class="pillTag">Meta Ads</span>
+                </div>
+                <h3>Ad Systems</h3>
+                <p>Creative + targeting + optimization — built for local leads.</p>
+                <div class="previewActions">
+                  <a class="btn small" href="#contact">Request Setup</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="slide">
+              <div class="cardPreview gradD">
+                <div class="previewTop">
+                  <span class="pillTag">Website</span>
+                </div>
+                <h3>Next Project</h3>
+                <p>Add your next client site here with a case study.</p>
+                <div class="previewActions">
+                  <button class="btn small ghost" disabled>Coming soon</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="dots" data-dots></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SLIDER -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Services</h2>
+          <p>Pick one or combine all three — best results come as a package.</p>
+        </div>
+
+        <div class="slider reveal" data-slider="services">
+          <div class="sliderTop">
+            <div class="sliderControls">
+              <button class="iconBtn" data-prev aria-label="Previous">←</button>
+              <button class="iconBtn" data-next aria-label="Next">→</button>
+            </div>
+            <div class="sliderHint">Swipe on mobile</div>
+          </div>
+
+          <div class="track" data-track>
+            <article class="slide">
+              <div class="serviceCard">
+                <div class="serviceIcon iWeb">&lt;/&gt;</div>
+                <h3>Website Design</h3>
+                <ul>
+                  <li>Custom design + build</li>
+                  <li>Fast, mobile-first</li>
+                  <li>SEO basics</li>
+                  <li>Launch support</li>
+                </ul>
+                <a class="btn small" href="#contact">Get pricing</a>
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="serviceCard">
+                <div class="serviceIcon iPhoto">◉</div>
+                <h3>Photography</h3>
+                <ul>
+                  <li>Brand / product / events</li>
+                  <li>Cinematic, clean edits</li>
+                  <li>Travel available</li>
+                </ul>
+                <a class="btn small" href="#contact">Book a shoot</a>
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="serviceCard">
+                <div class="serviceIcon iSocial">↗</div>
+                <h3>Meta Ads</h3>
+                <ul>
+                  <li>Instagram + Facebook</li>
+                  <li>Creative direction</li>
+                  <li>Optimization + reporting</li>
+                </ul>
+                <a class="btn small" href="#contact">Run ads</a>
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="serviceCard">
+                <div class="serviceIcon iPack">✦</div>
+                <h3>Full Package</h3>
+                <ul>
+                  <li>Website + photos + ads</li>
+                  <li>Matching visuals</li>
+                  <li>Higher conversion</li>
+                </ul>
+                <a class="btn small" href="#contact">Build my system</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="dots" data-dots></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLORFUL WIDGETS SECTION -->
+    <section id="widgets" class="section">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2>Widgets</h2>
+          <p>Premium doesn’t mean boring. These are small, tasteful animations.</p>
+        </div>
+
+        <div class="widgetShowcase">
+          <div class="bigWidget reveal">
+            <div class="bwTop">
+              <h3>Website Development</h3>
+              <span class="miniTag">Live Build</span>
+            </div>
+            <div class="codeAnim" aria-hidden="true">
+              <span class="line l1"></span>
+              <span class="line l2"></span>
+              <span class="line l3"></span>
+              <span class="cursor"></span>
+            </div>
+            <p class="bwText">Structure, speed, and clean UX — designed for conversion.</p>
+          </div>
+
+          <div class="bigWidget reveal">
+            <div class="bwTop">
+              <h3>Photography</h3>
+              <span class="miniTag">Shutter</span>
+            </div>
+            <div class="lensAnim" aria-hidden="true">
+              <div class="ring r1"></div>
+              <div class="ring r2"></div>
+              <div class="ring r3"></div>
+              <div class="core"></div>
+            </div>
+            <p class="bwText">Cinematic visuals that instantly raise perceived value.</p>
+          </div>
+
+          <div class="bigWidget reveal">
+            <div class="bwTop">
+              <h3>Social Media</h3>
+              <span class="miniTag">Growth</span>
+            </div>
+            <div class="growthAnim" aria-hidden="true">
+              <div class="bars">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="arrowUp">↗</div>
+            </div>
+            <p class="bwText">Meta ads built around creative + local targeting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container aboutGrid">
+        <div class="reveal">
+          <h2>About</h2>
+          <p class="aboutText">
+            I’m Bashar Al Mafalni. For 5+ years I’ve helped businesses look premium online using
+            clean web design, cinematic photography, and Meta advertising.
+          </p>
+
+          <div class="aboutPills">
+            <span class="pillInfo">Premium UI</span>
+            <span class="pillInfo">Clean edits</span>
+            <span class="pillInfo">Meta ads</span>
+          </div>
+        </div>
+
+        <div class="aboutCard reveal">
+          <div class="aboutRow">
+            <span class="k">Email</span>
+            <a class="v" href="mailto:balmafalni@gmail.com">balmafalni@gmail.com</a>
+          </div>
+          <div class="aboutRow">
+            <span class="k">Phone</span>
+            <a class="v" href="tel:+12262606527">226-260-6527</a>
+          </div>
+          <div class="aboutRow">
+            <span class="k">Instagram</span>
+            <a class="v" href="https://www.instagram.com/bashar.mafalani/" target="_blank" rel="noreferrer">@bashar.mafalani</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contactGrid">
+        <div class="reveal">
+          <h2>Contact</h2>
+          <p class="contactText">
+            Tell me what you need (website / photos / ads). I’ll reply by email.
+          </p>
+
+          <div class="contactCards">
+            <a class="contactCard" href="mailto:balmafalni@gmail.com">
+              <span class="k">Email</span><span class="v">balmafalni@gmail.com</span>
+            </a>
+            <a class="contactCard" href="tel:+12262606527">
+              <span class="k">Phone</span><span class="v">226-260-6527</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm">
+          <div class="row">
+            <label>
+              Name
+              <input name="name" type="text" placeholder="Your name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+            </label>
+          </div>
+
+          <label>
+            Business
+            <input name="business" type="text" placeholder="Business name (optional)" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="6" placeholder="What do you need?"></textarea>
+          </label>
+
+          <div class="formBottom">
+            <button class="btn primary" type="submit">Send Email</button>
+            <p class="tiny" id="formHint">Opens your email app (no backend).</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <p>© <span id="year"></span> BEIN Studio — Bashar Al Mafalni</p>
+        <div class="footerLinks">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <dialog class="modal" id="case-fc">
+    <div class="modalInner">
+      <button class="modalClose" data-close aria-label="Close">✕</button>
+      <h3>FCJerseys.ca</h3>
+      <p class="muted">
+        Featured storefront build focused on clean UI, fast browsing, and conversion-friendly structure.
+        Add metrics here later (speed score, sales, conversion uplift).
+      </p>
+      <div class="modalActions">
+        <a class="btn small" href="https://fcjerseys.ca" target="_blank" rel="noreferrer">Open ↗</a>
+        <button class="btn small ghost" data-close>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>
