@@ -35,7 +35,7 @@ a,button{-webkit-tap-highlight-color: transparent}
   position:fixed;
   inset:0;
   pointer-events:none;
-  z-index:0;
+  z-index:-1;      /* important */
   overflow:hidden;
 }
 .blob{
@@ -851,6 +851,11 @@ input:focus, textarea:focus{
   /* Optional: if you want zero motion on mobile, uncomment this:
   .blob{ display:none; }
   */
+}
+
+body{
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 /* Reduced motion */
