@@ -829,7 +829,7 @@ input:focus, textarea:focus{
   .navLinks{display:none}
   .menuBtn{display:flex}
   .row{grid-template-columns: 1fr}
-  .slide{min-width: 84%}
+  .slide{min-width: 88vw}
   .blob{width: 420px; height: 420px;}
 }
 
