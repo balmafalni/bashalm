@@ -280,6 +280,10 @@ section, [id]{scroll-margin-top: 88px}
   border:1px solid rgba(0,0,0,.08);
   box-shadow: var(--shadow);
   padding:14px;
+
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
 .panelTop{
   display:flex;
@@ -314,6 +318,97 @@ section, [id]{scroll-margin-top: 88px}
   grid-template-columns: 1fr 1fr;
   gap:10px;
 }
+
+/* ===== Widgets layout: never overlap ===== */
+.widgetGrid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:12px;
+  align-items:stretch;
+}
+
+/* Stack automatically when panel gets tight */
+@media (max-width: 1100px){
+  .widgetGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual widget */
+.widget{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  min-height: 110px;        /* ensures content room */
+  padding:14px;
+  border-radius:18px;
+  border:1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 24px rgba(10,20,40,.06);
+  overflow:hidden;          /* prevents internal overflow */
+}
+
+/* Header row */
+.wHead{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:950;
+  line-height:1;
+}
+
+/* Icon */
+.wIcon{
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:1000;
+  flex-shrink:0;
+}
+
+/* Body */
+.wBody{
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+/* Meta grid */
+.wMeta{
+  margin-top:auto;      /* pushes meta to bottom */
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:6px 10px;
+  font-size:12px;
+  color: rgba(11,15,24,.62);
+}
+
+.wMeta strong{
+  color: rgba(11,15,24,.88);
+  font-weight:950;
+}
+
+/* Progress + animations constrained */
+.progress,
+.shutter,
+.sparkLine{
+  width:100%;
+  max-width:100%;
+}
+
+/* Prevent animated bars from pushing layout */
+.sparkLine span{
+  max-height:30px;
+}
+.shutter span{
+  max-height:36px;
+}
+
 .widget{
   border-radius:18px;
   border:1px solid rgba(0,0,0,.08);
