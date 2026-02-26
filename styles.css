@@ -833,6 +833,26 @@ input:focus, textarea:focus{
   .blob{width: 420px; height: 420px;}
 }
 
+/* Mobile stability fixes */
+@media (max-width: 720px){
+  /* Stop the big background layer from causing scroll-jank */
+  .heroFx{
+    position:absolute;    /* was fixed */
+    inset:0;
+  }
+
+  /* Either disable blobs completely OR freeze them */
+  .blob{
+    animation: none !important;
+    opacity: .18;
+    filter: blur(26px);
+  }
+
+  /* Optional: if you want zero motion on mobile, uncomment this:
+  .blob{ display:none; }
+  */
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
