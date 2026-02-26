@@ -7,6 +7,7 @@ html, body{
 body{
   position: relative;
 }
+
 :root{
   --bg:#ffffff;
   --text:#0b0f18;
@@ -44,7 +45,7 @@ a,button{-webkit-tap-highlight-color: transparent}
   position:fixed;
   inset:0;
   pointer-events:none;
-  z-index:-1;      /* important */
+  z-index:0;
   overflow:hidden;
 }
 .blob{
@@ -838,33 +839,8 @@ input:focus, textarea:focus{
   .navLinks{display:none}
   .menuBtn{display:flex}
   .row{grid-template-columns: 1fr}
-  .slide{min-width: 88vw}
+  .slide{min-width: 84%}
   .blob{width: 420px; height: 420px;}
-}
-
-/* Mobile stability fixes */
-@media (max-width: 720px){
-  /* Stop the big background layer from causing scroll-jank */
-  .heroFx{
-    position:absolute;    /* was fixed */
-    inset:0;
-  }
-
-  /* Either disable blobs completely OR freeze them */
-  .blob{
-    animation: none !important;
-    opacity: .18;
-    filter: blur(26px);
-  }
-
-  /* Optional: if you want zero motion on mobile, uncomment this:
-  .blob{ display:none; }
-  */
-}
-
-body{
-  overflow-x: hidden;
-  overscroll-behavior-y: none;
 }
 
 /* Reduced motion */
